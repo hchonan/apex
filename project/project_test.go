@@ -3,20 +3,20 @@ package project_test
 import (
 	"testing"
 
-	"github.com/apex/apex/mock/service"
-	"github.com/apex/apex/project"
+	"github.com/hchonan/apex/mock/service"
+	"github.com/hchonan/apex/project"
 	"github.com/apex/log"
 	"github.com/apex/log/handlers/discard"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	_ "github.com/apex/apex/plugins/golang"
-	_ "github.com/apex/apex/plugins/hooks"
-	_ "github.com/apex/apex/plugins/inference"
-	_ "github.com/apex/apex/plugins/nodejs"
-	_ "github.com/apex/apex/plugins/python"
-	_ "github.com/apex/apex/plugins/shim"
+	_ "github.com/hchonan/apex/plugins/golang"
+	_ "github.com/hchonan/apex/plugins/hooks"
+	_ "github.com/hchonan/apex/plugins/inference"
+	_ "github.com/hchonan/apex/plugins/nodejs"
+	_ "github.com/hchonan/apex/plugins/python"
+	_ "github.com/hchonan/apex/plugins/shim"
 )
 
 func init() {

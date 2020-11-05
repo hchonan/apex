@@ -1,4 +1,11 @@
 
+v1.0.0-rc4-heritage / 2020-11-05
+================================
+
+  * forked from archived the original repository `apex/apex`
+  * adjust GitHub path changes
+  * adjust Readme.md, install script
+
 v1.0.0-rc4 / 2018-08-29
 =======================
 
