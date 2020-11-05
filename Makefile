@@ -34,5 +34,6 @@ $(MOCKGEN):
 	@go install github.com/golang/mock/mockgen
 
 local:
-	go install -a -ldflags "-X github.com/hchonan/apex/cmd/apex/version.Version=development" github.com/hchonan/apex/cmd/apex/
+	go install -a "-ldflags=-X github.com/hchonan/apex/cmd/apex/version.Version=development" github.com/hchonan/apex/cmd/apex/
+
 .PHONY: local
