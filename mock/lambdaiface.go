@@ -37,6 +37,7 @@ func (m *MockLambdaAPI) EXPECT() *MockLambdaAPIMockRecorder {
 
 // AddPermission mocks base method
 func (m *MockLambdaAPI) AddPermission(arg0 *lambda.AddPermissionInput) (*lambda.AddPermissionOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddPermission", arg0)
 	ret0, _ := ret[0].(*lambda.AddPermissionOutput)
 	ret1, _ := ret[1].(error)
@@ -45,11 +46,13 @@ func (m *MockLambdaAPI) AddPermission(arg0 *lambda.AddPermissionInput) (*lambda.
 
 // AddPermission indicates an expected call of AddPermission
 func (mr *MockLambdaAPIMockRecorder) AddPermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddPermission", reflect.TypeOf((*MockLambdaAPI)(nil).AddPermission), arg0)
 }
 
 // AddPermissionRequest mocks base method
 func (m *MockLambdaAPI) AddPermissionRequest(arg0 *lambda.AddPermissionInput) (*request.Request, *lambda.AddPermissionOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "AddPermissionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.AddPermissionOutput)
@@ -58,11 +61,13 @@ func (m *MockLambdaAPI) AddPermissionRequest(arg0 *lambda.AddPermissionInput) (*
 
 // AddPermissionRequest indicates an expected call of AddPermissionRequest
 func (mr *MockLambdaAPIMockRecorder) AddPermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddPermissionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).AddPermissionRequest), arg0)
 }
 
 // AddPermissionWithContext mocks base method
 func (m *MockLambdaAPI) AddPermissionWithContext(arg0 aws.Context, arg1 *lambda.AddPermissionInput, arg2 ...request.Option) (*lambda.AddPermissionOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -75,12 +80,14 @@ func (m *MockLambdaAPI) AddPermissionWithContext(arg0 aws.Context, arg1 *lambda.
 
 // AddPermissionWithContext indicates an expected call of AddPermissionWithContext
 func (mr *MockLambdaAPIMockRecorder) AddPermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddPermissionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).AddPermissionWithContext), varargs...)
 }
 
 // CreateAlias mocks base method
 func (m *MockLambdaAPI) CreateAlias(arg0 *lambda.CreateAliasInput) (*lambda.AliasConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateAlias", arg0)
 	ret0, _ := ret[0].(*lambda.AliasConfiguration)
 	ret1, _ := ret[1].(error)
@@ -89,11 +96,13 @@ func (m *MockLambdaAPI) CreateAlias(arg0 *lambda.CreateAliasInput) (*lambda.Alia
 
 // CreateAlias indicates an expected call of CreateAlias
 func (mr *MockLambdaAPIMockRecorder) CreateAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAlias", reflect.TypeOf((*MockLambdaAPI)(nil).CreateAlias), arg0)
 }
 
 // CreateAliasRequest mocks base method
 func (m *MockLambdaAPI) CreateAliasRequest(arg0 *lambda.CreateAliasInput) (*request.Request, *lambda.AliasConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateAliasRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.AliasConfiguration)
@@ -102,11 +111,13 @@ func (m *MockLambdaAPI) CreateAliasRequest(arg0 *lambda.CreateAliasInput) (*requ
 
 // CreateAliasRequest indicates an expected call of CreateAliasRequest
 func (mr *MockLambdaAPIMockRecorder) CreateAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAliasRequest", reflect.TypeOf((*MockLambdaAPI)(nil).CreateAliasRequest), arg0)
 }
 
 // CreateAliasWithContext mocks base method
 func (m *MockLambdaAPI) CreateAliasWithContext(arg0 aws.Context, arg1 *lambda.CreateAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -119,12 +130,14 @@ func (m *MockLambdaAPI) CreateAliasWithContext(arg0 aws.Context, arg1 *lambda.Cr
 
 // CreateAliasWithContext indicates an expected call of CreateAliasWithContext
 func (mr *MockLambdaAPIMockRecorder) CreateAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).CreateAliasWithContext), varargs...)
 }
 
 // CreateEventSourceMapping mocks base method
 func (m *MockLambdaAPI) CreateEventSourceMapping(arg0 *lambda.CreateEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEventSourceMapping", arg0)
 	ret0, _ := ret[0].(*lambda.EventSourceMappingConfiguration)
 	ret1, _ := ret[1].(error)
@@ -133,11 +146,13 @@ func (m *MockLambdaAPI) CreateEventSourceMapping(arg0 *lambda.CreateEventSourceM
 
 // CreateEventSourceMapping indicates an expected call of CreateEventSourceMapping
 func (mr *MockLambdaAPIMockRecorder) CreateEventSourceMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventSourceMapping", reflect.TypeOf((*MockLambdaAPI)(nil).CreateEventSourceMapping), arg0)
 }
 
 // CreateEventSourceMappingRequest mocks base method
 func (m *MockLambdaAPI) CreateEventSourceMappingRequest(arg0 *lambda.CreateEventSourceMappingInput) (*request.Request, *lambda.EventSourceMappingConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateEventSourceMappingRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.EventSourceMappingConfiguration)
@@ -146,11 +161,13 @@ func (m *MockLambdaAPI) CreateEventSourceMappingRequest(arg0 *lambda.CreateEvent
 
 // CreateEventSourceMappingRequest indicates an expected call of CreateEventSourceMappingRequest
 func (mr *MockLambdaAPIMockRecorder) CreateEventSourceMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventSourceMappingRequest", reflect.TypeOf((*MockLambdaAPI)(nil).CreateEventSourceMappingRequest), arg0)
 }
 
 // CreateEventSourceMappingWithContext mocks base method
 func (m *MockLambdaAPI) CreateEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.CreateEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -163,12 +180,14 @@ func (m *MockLambdaAPI) CreateEventSourceMappingWithContext(arg0 aws.Context, ar
 
 // CreateEventSourceMappingWithContext indicates an expected call of CreateEventSourceMappingWithContext
 func (mr *MockLambdaAPIMockRecorder) CreateEventSourceMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventSourceMappingWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).CreateEventSourceMappingWithContext), varargs...)
 }
 
 // CreateFunction mocks base method
 func (m *MockLambdaAPI) CreateFunction(arg0 *lambda.CreateFunctionInput) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateFunction", arg0)
 	ret0, _ := ret[0].(*lambda.FunctionConfiguration)
 	ret1, _ := ret[1].(error)
@@ -177,11 +196,13 @@ func (m *MockLambdaAPI) CreateFunction(arg0 *lambda.CreateFunctionInput) (*lambd
 
 // CreateFunction indicates an expected call of CreateFunction
 func (mr *MockLambdaAPIMockRecorder) CreateFunction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFunction", reflect.TypeOf((*MockLambdaAPI)(nil).CreateFunction), arg0)
 }
 
 // CreateFunctionRequest mocks base method
 func (m *MockLambdaAPI) CreateFunctionRequest(arg0 *lambda.CreateFunctionInput) (*request.Request, *lambda.FunctionConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateFunctionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.FunctionConfiguration)
@@ -190,11 +211,13 @@ func (m *MockLambdaAPI) CreateFunctionRequest(arg0 *lambda.CreateFunctionInput) 
 
 // CreateFunctionRequest indicates an expected call of CreateFunctionRequest
 func (mr *MockLambdaAPIMockRecorder) CreateFunctionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFunctionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).CreateFunctionRequest), arg0)
 }
 
 // CreateFunctionWithContext mocks base method
 func (m *MockLambdaAPI) CreateFunctionWithContext(arg0 aws.Context, arg1 *lambda.CreateFunctionInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -207,12 +230,14 @@ func (m *MockLambdaAPI) CreateFunctionWithContext(arg0 aws.Context, arg1 *lambda
 
 // CreateFunctionWithContext indicates an expected call of CreateFunctionWithContext
 func (mr *MockLambdaAPIMockRecorder) CreateFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).CreateFunctionWithContext), varargs...)
 }
 
 // DeleteAlias mocks base method
 func (m *MockLambdaAPI) DeleteAlias(arg0 *lambda.DeleteAliasInput) (*lambda.DeleteAliasOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAlias", arg0)
 	ret0, _ := ret[0].(*lambda.DeleteAliasOutput)
 	ret1, _ := ret[1].(error)
@@ -221,11 +246,13 @@ func (m *MockLambdaAPI) DeleteAlias(arg0 *lambda.DeleteAliasInput) (*lambda.Dele
 
 // DeleteAlias indicates an expected call of DeleteAlias
 func (mr *MockLambdaAPIMockRecorder) DeleteAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlias", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteAlias), arg0)
 }
 
 // DeleteAliasRequest mocks base method
 func (m *MockLambdaAPI) DeleteAliasRequest(arg0 *lambda.DeleteAliasInput) (*request.Request, *lambda.DeleteAliasOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteAliasRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.DeleteAliasOutput)
@@ -234,11 +261,13 @@ func (m *MockLambdaAPI) DeleteAliasRequest(arg0 *lambda.DeleteAliasInput) (*requ
 
 // DeleteAliasRequest indicates an expected call of DeleteAliasRequest
 func (mr *MockLambdaAPIMockRecorder) DeleteAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAliasRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteAliasRequest), arg0)
 }
 
 // DeleteAliasWithContext mocks base method
 func (m *MockLambdaAPI) DeleteAliasWithContext(arg0 aws.Context, arg1 *lambda.DeleteAliasInput, arg2 ...request.Option) (*lambda.DeleteAliasOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -251,12 +280,14 @@ func (m *MockLambdaAPI) DeleteAliasWithContext(arg0 aws.Context, arg1 *lambda.De
 
 // DeleteAliasWithContext indicates an expected call of DeleteAliasWithContext
 func (mr *MockLambdaAPIMockRecorder) DeleteAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteAliasWithContext), varargs...)
 }
 
 // DeleteEventSourceMapping mocks base method
 func (m *MockLambdaAPI) DeleteEventSourceMapping(arg0 *lambda.DeleteEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEventSourceMapping", arg0)
 	ret0, _ := ret[0].(*lambda.EventSourceMappingConfiguration)
 	ret1, _ := ret[1].(error)
@@ -265,11 +296,13 @@ func (m *MockLambdaAPI) DeleteEventSourceMapping(arg0 *lambda.DeleteEventSourceM
 
 // DeleteEventSourceMapping indicates an expected call of DeleteEventSourceMapping
 func (mr *MockLambdaAPIMockRecorder) DeleteEventSourceMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSourceMapping", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteEventSourceMapping), arg0)
 }
 
 // DeleteEventSourceMappingRequest mocks base method
 func (m *MockLambdaAPI) DeleteEventSourceMappingRequest(arg0 *lambda.DeleteEventSourceMappingInput) (*request.Request, *lambda.EventSourceMappingConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteEventSourceMappingRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.EventSourceMappingConfiguration)
@@ -278,11 +311,13 @@ func (m *MockLambdaAPI) DeleteEventSourceMappingRequest(arg0 *lambda.DeleteEvent
 
 // DeleteEventSourceMappingRequest indicates an expected call of DeleteEventSourceMappingRequest
 func (mr *MockLambdaAPIMockRecorder) DeleteEventSourceMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSourceMappingRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteEventSourceMappingRequest), arg0)
 }
 
 // DeleteEventSourceMappingWithContext mocks base method
 func (m *MockLambdaAPI) DeleteEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.DeleteEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -295,12 +330,14 @@ func (m *MockLambdaAPI) DeleteEventSourceMappingWithContext(arg0 aws.Context, ar
 
 // DeleteEventSourceMappingWithContext indicates an expected call of DeleteEventSourceMappingWithContext
 func (mr *MockLambdaAPIMockRecorder) DeleteEventSourceMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSourceMappingWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteEventSourceMappingWithContext), varargs...)
 }
 
 // DeleteFunction mocks base method
 func (m *MockLambdaAPI) DeleteFunction(arg0 *lambda.DeleteFunctionInput) (*lambda.DeleteFunctionOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFunction", arg0)
 	ret0, _ := ret[0].(*lambda.DeleteFunctionOutput)
 	ret1, _ := ret[1].(error)
@@ -309,11 +346,13 @@ func (m *MockLambdaAPI) DeleteFunction(arg0 *lambda.DeleteFunctionInput) (*lambd
 
 // DeleteFunction indicates an expected call of DeleteFunction
 func (mr *MockLambdaAPIMockRecorder) DeleteFunction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunction", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunction), arg0)
 }
 
 // DeleteFunctionConcurrency mocks base method
 func (m *MockLambdaAPI) DeleteFunctionConcurrency(arg0 *lambda.DeleteFunctionConcurrencyInput) (*lambda.DeleteFunctionConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFunctionConcurrency", arg0)
 	ret0, _ := ret[0].(*lambda.DeleteFunctionConcurrencyOutput)
 	ret1, _ := ret[1].(error)
@@ -322,11 +361,13 @@ func (m *MockLambdaAPI) DeleteFunctionConcurrency(arg0 *lambda.DeleteFunctionCon
 
 // DeleteFunctionConcurrency indicates an expected call of DeleteFunctionConcurrency
 func (mr *MockLambdaAPIMockRecorder) DeleteFunctionConcurrency(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionConcurrency", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionConcurrency), arg0)
 }
 
 // DeleteFunctionConcurrencyRequest mocks base method
 func (m *MockLambdaAPI) DeleteFunctionConcurrencyRequest(arg0 *lambda.DeleteFunctionConcurrencyInput) (*request.Request, *lambda.DeleteFunctionConcurrencyOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFunctionConcurrencyRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.DeleteFunctionConcurrencyOutput)
@@ -335,11 +376,13 @@ func (m *MockLambdaAPI) DeleteFunctionConcurrencyRequest(arg0 *lambda.DeleteFunc
 
 // DeleteFunctionConcurrencyRequest indicates an expected call of DeleteFunctionConcurrencyRequest
 func (mr *MockLambdaAPIMockRecorder) DeleteFunctionConcurrencyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionConcurrencyRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionConcurrencyRequest), arg0)
 }
 
 // DeleteFunctionConcurrencyWithContext mocks base method
 func (m *MockLambdaAPI) DeleteFunctionConcurrencyWithContext(arg0 aws.Context, arg1 *lambda.DeleteFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.DeleteFunctionConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -352,12 +395,14 @@ func (m *MockLambdaAPI) DeleteFunctionConcurrencyWithContext(arg0 aws.Context, a
 
 // DeleteFunctionConcurrencyWithContext indicates an expected call of DeleteFunctionConcurrencyWithContext
 func (mr *MockLambdaAPIMockRecorder) DeleteFunctionConcurrencyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionConcurrencyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionConcurrencyWithContext), varargs...)
 }
 
 // DeleteFunctionRequest mocks base method
 func (m *MockLambdaAPI) DeleteFunctionRequest(arg0 *lambda.DeleteFunctionInput) (*request.Request, *lambda.DeleteFunctionOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "DeleteFunctionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.DeleteFunctionOutput)
@@ -366,11 +411,13 @@ func (m *MockLambdaAPI) DeleteFunctionRequest(arg0 *lambda.DeleteFunctionInput) 
 
 // DeleteFunctionRequest indicates an expected call of DeleteFunctionRequest
 func (mr *MockLambdaAPIMockRecorder) DeleteFunctionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionRequest), arg0)
 }
 
 // DeleteFunctionWithContext mocks base method
 func (m *MockLambdaAPI) DeleteFunctionWithContext(arg0 aws.Context, arg1 *lambda.DeleteFunctionInput, arg2 ...request.Option) (*lambda.DeleteFunctionOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -383,12 +430,14 @@ func (m *MockLambdaAPI) DeleteFunctionWithContext(arg0 aws.Context, arg1 *lambda
 
 // DeleteFunctionWithContext indicates an expected call of DeleteFunctionWithContext
 func (mr *MockLambdaAPIMockRecorder) DeleteFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionWithContext), varargs...)
 }
 
 // GetAccountSettings mocks base method
 func (m *MockLambdaAPI) GetAccountSettings(arg0 *lambda.GetAccountSettingsInput) (*lambda.GetAccountSettingsOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAccountSettings", arg0)
 	ret0, _ := ret[0].(*lambda.GetAccountSettingsOutput)
 	ret1, _ := ret[1].(error)
@@ -397,11 +446,13 @@ func (m *MockLambdaAPI) GetAccountSettings(arg0 *lambda.GetAccountSettingsInput)
 
 // GetAccountSettings indicates an expected call of GetAccountSettings
 func (mr *MockLambdaAPIMockRecorder) GetAccountSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettings", reflect.TypeOf((*MockLambdaAPI)(nil).GetAccountSettings), arg0)
 }
 
 // GetAccountSettingsRequest mocks base method
 func (m *MockLambdaAPI) GetAccountSettingsRequest(arg0 *lambda.GetAccountSettingsInput) (*request.Request, *lambda.GetAccountSettingsOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAccountSettingsRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.GetAccountSettingsOutput)
@@ -410,11 +461,13 @@ func (m *MockLambdaAPI) GetAccountSettingsRequest(arg0 *lambda.GetAccountSetting
 
 // GetAccountSettingsRequest indicates an expected call of GetAccountSettingsRequest
 func (mr *MockLambdaAPIMockRecorder) GetAccountSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettingsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetAccountSettingsRequest), arg0)
 }
 
 // GetAccountSettingsWithContext mocks base method
 func (m *MockLambdaAPI) GetAccountSettingsWithContext(arg0 aws.Context, arg1 *lambda.GetAccountSettingsInput, arg2 ...request.Option) (*lambda.GetAccountSettingsOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -427,12 +480,14 @@ func (m *MockLambdaAPI) GetAccountSettingsWithContext(arg0 aws.Context, arg1 *la
 
 // GetAccountSettingsWithContext indicates an expected call of GetAccountSettingsWithContext
 func (mr *MockLambdaAPIMockRecorder) GetAccountSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettingsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetAccountSettingsWithContext), varargs...)
 }
 
 // GetAlias mocks base method
 func (m *MockLambdaAPI) GetAlias(arg0 *lambda.GetAliasInput) (*lambda.AliasConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAlias", arg0)
 	ret0, _ := ret[0].(*lambda.AliasConfiguration)
 	ret1, _ := ret[1].(error)
@@ -441,11 +496,13 @@ func (m *MockLambdaAPI) GetAlias(arg0 *lambda.GetAliasInput) (*lambda.AliasConfi
 
 // GetAlias indicates an expected call of GetAlias
 func (mr *MockLambdaAPIMockRecorder) GetAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAlias", reflect.TypeOf((*MockLambdaAPI)(nil).GetAlias), arg0)
 }
 
 // GetAliasRequest mocks base method
 func (m *MockLambdaAPI) GetAliasRequest(arg0 *lambda.GetAliasInput) (*request.Request, *lambda.AliasConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetAliasRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.AliasConfiguration)
@@ -454,11 +511,13 @@ func (m *MockLambdaAPI) GetAliasRequest(arg0 *lambda.GetAliasInput) (*request.Re
 
 // GetAliasRequest indicates an expected call of GetAliasRequest
 func (mr *MockLambdaAPIMockRecorder) GetAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAliasRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetAliasRequest), arg0)
 }
 
 // GetAliasWithContext mocks base method
 func (m *MockLambdaAPI) GetAliasWithContext(arg0 aws.Context, arg1 *lambda.GetAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -471,12 +530,14 @@ func (m *MockLambdaAPI) GetAliasWithContext(arg0 aws.Context, arg1 *lambda.GetAl
 
 // GetAliasWithContext indicates an expected call of GetAliasWithContext
 func (mr *MockLambdaAPIMockRecorder) GetAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetAliasWithContext), varargs...)
 }
 
 // GetEventSourceMapping mocks base method
 func (m *MockLambdaAPI) GetEventSourceMapping(arg0 *lambda.GetEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetEventSourceMapping", arg0)
 	ret0, _ := ret[0].(*lambda.EventSourceMappingConfiguration)
 	ret1, _ := ret[1].(error)
@@ -485,11 +546,13 @@ func (m *MockLambdaAPI) GetEventSourceMapping(arg0 *lambda.GetEventSourceMapping
 
 // GetEventSourceMapping indicates an expected call of GetEventSourceMapping
 func (mr *MockLambdaAPIMockRecorder) GetEventSourceMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventSourceMapping", reflect.TypeOf((*MockLambdaAPI)(nil).GetEventSourceMapping), arg0)
 }
 
 // GetEventSourceMappingRequest mocks base method
 func (m *MockLambdaAPI) GetEventSourceMappingRequest(arg0 *lambda.GetEventSourceMappingInput) (*request.Request, *lambda.EventSourceMappingConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetEventSourceMappingRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.EventSourceMappingConfiguration)
@@ -498,11 +561,13 @@ func (m *MockLambdaAPI) GetEventSourceMappingRequest(arg0 *lambda.GetEventSource
 
 // GetEventSourceMappingRequest indicates an expected call of GetEventSourceMappingRequest
 func (mr *MockLambdaAPIMockRecorder) GetEventSourceMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventSourceMappingRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetEventSourceMappingRequest), arg0)
 }
 
 // GetEventSourceMappingWithContext mocks base method
 func (m *MockLambdaAPI) GetEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.GetEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -515,12 +580,14 @@ func (m *MockLambdaAPI) GetEventSourceMappingWithContext(arg0 aws.Context, arg1 
 
 // GetEventSourceMappingWithContext indicates an expected call of GetEventSourceMappingWithContext
 func (mr *MockLambdaAPIMockRecorder) GetEventSourceMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventSourceMappingWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetEventSourceMappingWithContext), varargs...)
 }
 
 // GetFunction mocks base method
 func (m *MockLambdaAPI) GetFunction(arg0 *lambda.GetFunctionInput) (*lambda.GetFunctionOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFunction", arg0)
 	ret0, _ := ret[0].(*lambda.GetFunctionOutput)
 	ret1, _ := ret[1].(error)
@@ -529,11 +596,13 @@ func (m *MockLambdaAPI) GetFunction(arg0 *lambda.GetFunctionInput) (*lambda.GetF
 
 // GetFunction indicates an expected call of GetFunction
 func (mr *MockLambdaAPIMockRecorder) GetFunction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunction", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunction), arg0)
 }
 
 // GetFunctionConfiguration mocks base method
 func (m *MockLambdaAPI) GetFunctionConfiguration(arg0 *lambda.GetFunctionConfigurationInput) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFunctionConfiguration", arg0)
 	ret0, _ := ret[0].(*lambda.FunctionConfiguration)
 	ret1, _ := ret[1].(error)
@@ -542,11 +611,13 @@ func (m *MockLambdaAPI) GetFunctionConfiguration(arg0 *lambda.GetFunctionConfigu
 
 // GetFunctionConfiguration indicates an expected call of GetFunctionConfiguration
 func (mr *MockLambdaAPIMockRecorder) GetFunctionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConfiguration", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConfiguration), arg0)
 }
 
 // GetFunctionConfigurationRequest mocks base method
 func (m *MockLambdaAPI) GetFunctionConfigurationRequest(arg0 *lambda.GetFunctionConfigurationInput) (*request.Request, *lambda.FunctionConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFunctionConfigurationRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.FunctionConfiguration)
@@ -555,11 +626,13 @@ func (m *MockLambdaAPI) GetFunctionConfigurationRequest(arg0 *lambda.GetFunction
 
 // GetFunctionConfigurationRequest indicates an expected call of GetFunctionConfigurationRequest
 func (mr *MockLambdaAPIMockRecorder) GetFunctionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConfigurationRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConfigurationRequest), arg0)
 }
 
 // GetFunctionConfigurationWithContext mocks base method
 func (m *MockLambdaAPI) GetFunctionConfigurationWithContext(arg0 aws.Context, arg1 *lambda.GetFunctionConfigurationInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -572,12 +645,14 @@ func (m *MockLambdaAPI) GetFunctionConfigurationWithContext(arg0 aws.Context, ar
 
 // GetFunctionConfigurationWithContext indicates an expected call of GetFunctionConfigurationWithContext
 func (mr *MockLambdaAPIMockRecorder) GetFunctionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionConfigurationWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionConfigurationWithContext), varargs...)
 }
 
 // GetFunctionRequest mocks base method
 func (m *MockLambdaAPI) GetFunctionRequest(arg0 *lambda.GetFunctionInput) (*request.Request, *lambda.GetFunctionOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetFunctionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.GetFunctionOutput)
@@ -586,11 +661,13 @@ func (m *MockLambdaAPI) GetFunctionRequest(arg0 *lambda.GetFunctionInput) (*requ
 
 // GetFunctionRequest indicates an expected call of GetFunctionRequest
 func (mr *MockLambdaAPIMockRecorder) GetFunctionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionRequest), arg0)
 }
 
 // GetFunctionWithContext mocks base method
 func (m *MockLambdaAPI) GetFunctionWithContext(arg0 aws.Context, arg1 *lambda.GetFunctionInput, arg2 ...request.Option) (*lambda.GetFunctionOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -603,12 +680,14 @@ func (m *MockLambdaAPI) GetFunctionWithContext(arg0 aws.Context, arg1 *lambda.Ge
 
 // GetFunctionWithContext indicates an expected call of GetFunctionWithContext
 func (mr *MockLambdaAPIMockRecorder) GetFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionWithContext), varargs...)
 }
 
 // GetPolicy mocks base method
 func (m *MockLambdaAPI) GetPolicy(arg0 *lambda.GetPolicyInput) (*lambda.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPolicy", arg0)
 	ret0, _ := ret[0].(*lambda.GetPolicyOutput)
 	ret1, _ := ret[1].(error)
@@ -617,11 +696,13 @@ func (m *MockLambdaAPI) GetPolicy(arg0 *lambda.GetPolicyInput) (*lambda.GetPolic
 
 // GetPolicy indicates an expected call of GetPolicy
 func (mr *MockLambdaAPIMockRecorder) GetPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicy", reflect.TypeOf((*MockLambdaAPI)(nil).GetPolicy), arg0)
 }
 
 // GetPolicyRequest mocks base method
 func (m *MockLambdaAPI) GetPolicyRequest(arg0 *lambda.GetPolicyInput) (*request.Request, *lambda.GetPolicyOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetPolicyRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.GetPolicyOutput)
@@ -630,11 +711,13 @@ func (m *MockLambdaAPI) GetPolicyRequest(arg0 *lambda.GetPolicyInput) (*request.
 
 // GetPolicyRequest indicates an expected call of GetPolicyRequest
 func (mr *MockLambdaAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetPolicyRequest), arg0)
 }
 
 // GetPolicyWithContext mocks base method
 func (m *MockLambdaAPI) GetPolicyWithContext(arg0 aws.Context, arg1 *lambda.GetPolicyInput, arg2 ...request.Option) (*lambda.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -647,12 +730,14 @@ func (m *MockLambdaAPI) GetPolicyWithContext(arg0 aws.Context, arg1 *lambda.GetP
 
 // GetPolicyWithContext indicates an expected call of GetPolicyWithContext
 func (mr *MockLambdaAPIMockRecorder) GetPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetPolicyWithContext), varargs...)
 }
 
 // Invoke mocks base method
 func (m *MockLambdaAPI) Invoke(arg0 *lambda.InvokeInput) (*lambda.InvokeOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "Invoke", arg0)
 	ret0, _ := ret[0].(*lambda.InvokeOutput)
 	ret1, _ := ret[1].(error)
@@ -661,11 +746,13 @@ func (m *MockLambdaAPI) Invoke(arg0 *lambda.InvokeInput) (*lambda.InvokeOutput, 
 
 // Invoke indicates an expected call of Invoke
 func (mr *MockLambdaAPIMockRecorder) Invoke(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Invoke", reflect.TypeOf((*MockLambdaAPI)(nil).Invoke), arg0)
 }
 
 // InvokeAsync mocks base method
 func (m *MockLambdaAPI) InvokeAsync(arg0 *lambda.InvokeAsyncInput) (*lambda.InvokeAsyncOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InvokeAsync", arg0)
 	ret0, _ := ret[0].(*lambda.InvokeAsyncOutput)
 	ret1, _ := ret[1].(error)
@@ -674,11 +761,13 @@ func (m *MockLambdaAPI) InvokeAsync(arg0 *lambda.InvokeAsyncInput) (*lambda.Invo
 
 // InvokeAsync indicates an expected call of InvokeAsync
 func (mr *MockLambdaAPIMockRecorder) InvokeAsync(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeAsync", reflect.TypeOf((*MockLambdaAPI)(nil).InvokeAsync), arg0)
 }
 
 // InvokeAsyncRequest mocks base method
 func (m *MockLambdaAPI) InvokeAsyncRequest(arg0 *lambda.InvokeAsyncInput) (*request.Request, *lambda.InvokeAsyncOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InvokeAsyncRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.InvokeAsyncOutput)
@@ -687,11 +776,13 @@ func (m *MockLambdaAPI) InvokeAsyncRequest(arg0 *lambda.InvokeAsyncInput) (*requ
 
 // InvokeAsyncRequest indicates an expected call of InvokeAsyncRequest
 func (mr *MockLambdaAPIMockRecorder) InvokeAsyncRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeAsyncRequest", reflect.TypeOf((*MockLambdaAPI)(nil).InvokeAsyncRequest), arg0)
 }
 
 // InvokeAsyncWithContext mocks base method
 func (m *MockLambdaAPI) InvokeAsyncWithContext(arg0 aws.Context, arg1 *lambda.InvokeAsyncInput, arg2 ...request.Option) (*lambda.InvokeAsyncOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -704,12 +795,14 @@ func (m *MockLambdaAPI) InvokeAsyncWithContext(arg0 aws.Context, arg1 *lambda.In
 
 // InvokeAsyncWithContext indicates an expected call of InvokeAsyncWithContext
 func (mr *MockLambdaAPIMockRecorder) InvokeAsyncWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeAsyncWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).InvokeAsyncWithContext), varargs...)
 }
 
 // InvokeRequest mocks base method
 func (m *MockLambdaAPI) InvokeRequest(arg0 *lambda.InvokeInput) (*request.Request, *lambda.InvokeOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "InvokeRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.InvokeOutput)
@@ -718,11 +811,13 @@ func (m *MockLambdaAPI) InvokeRequest(arg0 *lambda.InvokeInput) (*request.Reques
 
 // InvokeRequest indicates an expected call of InvokeRequest
 func (mr *MockLambdaAPIMockRecorder) InvokeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeRequest", reflect.TypeOf((*MockLambdaAPI)(nil).InvokeRequest), arg0)
 }
 
 // InvokeWithContext mocks base method
 func (m *MockLambdaAPI) InvokeWithContext(arg0 aws.Context, arg1 *lambda.InvokeInput, arg2 ...request.Option) (*lambda.InvokeOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -735,12 +830,14 @@ func (m *MockLambdaAPI) InvokeWithContext(arg0 aws.Context, arg1 *lambda.InvokeI
 
 // InvokeWithContext indicates an expected call of InvokeWithContext
 func (mr *MockLambdaAPIMockRecorder) InvokeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).InvokeWithContext), varargs...)
 }
 
 // ListAliases mocks base method
 func (m *MockLambdaAPI) ListAliases(arg0 *lambda.ListAliasesInput) (*lambda.ListAliasesOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAliases", arg0)
 	ret0, _ := ret[0].(*lambda.ListAliasesOutput)
 	ret1, _ := ret[1].(error)
@@ -749,11 +846,13 @@ func (m *MockLambdaAPI) ListAliases(arg0 *lambda.ListAliasesInput) (*lambda.List
 
 // ListAliases indicates an expected call of ListAliases
 func (mr *MockLambdaAPIMockRecorder) ListAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliases", reflect.TypeOf((*MockLambdaAPI)(nil).ListAliases), arg0)
 }
 
 // ListAliasesRequest mocks base method
 func (m *MockLambdaAPI) ListAliasesRequest(arg0 *lambda.ListAliasesInput) (*request.Request, *lambda.ListAliasesOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListAliasesRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.ListAliasesOutput)
@@ -762,11 +861,13 @@ func (m *MockLambdaAPI) ListAliasesRequest(arg0 *lambda.ListAliasesInput) (*requ
 
 // ListAliasesRequest indicates an expected call of ListAliasesRequest
 func (mr *MockLambdaAPIMockRecorder) ListAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliasesRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListAliasesRequest), arg0)
 }
 
 // ListAliasesWithContext mocks base method
 func (m *MockLambdaAPI) ListAliasesWithContext(arg0 aws.Context, arg1 *lambda.ListAliasesInput, arg2 ...request.Option) (*lambda.ListAliasesOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -779,12 +880,14 @@ func (m *MockLambdaAPI) ListAliasesWithContext(arg0 aws.Context, arg1 *lambda.Li
 
 // ListAliasesWithContext indicates an expected call of ListAliasesWithContext
 func (mr *MockLambdaAPIMockRecorder) ListAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliasesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListAliasesWithContext), varargs...)
 }
 
 // ListEventSourceMappings mocks base method
 func (m *MockLambdaAPI) ListEventSourceMappings(arg0 *lambda.ListEventSourceMappingsInput) (*lambda.ListEventSourceMappingsOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListEventSourceMappings", arg0)
 	ret0, _ := ret[0].(*lambda.ListEventSourceMappingsOutput)
 	ret1, _ := ret[1].(error)
@@ -793,11 +896,13 @@ func (m *MockLambdaAPI) ListEventSourceMappings(arg0 *lambda.ListEventSourceMapp
 
 // ListEventSourceMappings indicates an expected call of ListEventSourceMappings
 func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourceMappings", reflect.TypeOf((*MockLambdaAPI)(nil).ListEventSourceMappings), arg0)
 }
 
 // ListEventSourceMappingsPages mocks base method
 func (m *MockLambdaAPI) ListEventSourceMappingsPages(arg0 *lambda.ListEventSourceMappingsInput, arg1 func(*lambda.ListEventSourceMappingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListEventSourceMappingsPages", arg0, arg1)
 	ret0, _ := ret[0].(error)
 	return ret0
@@ -805,11 +910,13 @@ func (m *MockLambdaAPI) ListEventSourceMappingsPages(arg0 *lambda.ListEventSourc
 
 // ListEventSourceMappingsPages indicates an expected call of ListEventSourceMappingsPages
 func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourceMappingsPages", reflect.TypeOf((*MockLambdaAPI)(nil).ListEventSourceMappingsPages), arg0, arg1)
 }
 
 // ListEventSourceMappingsPagesWithContext mocks base method
 func (m *MockLambdaAPI) ListEventSourceMappingsPagesWithContext(arg0 aws.Context, arg1 *lambda.ListEventSourceMappingsInput, arg2 func(*lambda.ListEventSourceMappingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
 		varargs = append(varargs, a)
@@ -821,12 +928,14 @@ func (m *MockLambdaAPI) ListEventSourceMappingsPagesWithContext(arg0 aws.Context
 
 // ListEventSourceMappingsPagesWithContext indicates an expected call of ListEventSourceMappingsPagesWithContext
 func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourceMappingsPagesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListEventSourceMappingsPagesWithContext), varargs...)
 }
 
 // ListEventSourceMappingsRequest mocks base method
 func (m *MockLambdaAPI) ListEventSourceMappingsRequest(arg0 *lambda.ListEventSourceMappingsInput) (*request.Request, *lambda.ListEventSourceMappingsOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListEventSourceMappingsRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.ListEventSourceMappingsOutput)
@@ -835,11 +944,13 @@ func (m *MockLambdaAPI) ListEventSourceMappingsRequest(arg0 *lambda.ListEventSou
 
 // ListEventSourceMappingsRequest indicates an expected call of ListEventSourceMappingsRequest
 func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourceMappingsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListEventSourceMappingsRequest), arg0)
 }
 
 // ListEventSourceMappingsWithContext mocks base method
 func (m *MockLambdaAPI) ListEventSourceMappingsWithContext(arg0 aws.Context, arg1 *lambda.ListEventSourceMappingsInput, arg2 ...request.Option) (*lambda.ListEventSourceMappingsOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -852,12 +963,14 @@ func (m *MockLambdaAPI) ListEventSourceMappingsWithContext(arg0 aws.Context, arg
 
 // ListEventSourceMappingsWithContext indicates an expected call of ListEventSourceMappingsWithContext
 func (mr *MockLambdaAPIMockRecorder) ListEventSourceMappingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventSourceMappingsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListEventSourceMappingsWithContext), varargs...)
 }
 
 // ListFunctions mocks base method
 func (m *MockLambdaAPI) ListFunctions(arg0 *lambda.ListFunctionsInput) (*lambda.ListFunctionsOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFunctions", arg0)
 	ret0, _ := ret[0].(*lambda.ListFunctionsOutput)
 	ret1, _ := ret[1].(error)
@@ -866,11 +979,13 @@ func (m *MockLambdaAPI) ListFunctions(arg0 *lambda.ListFunctionsInput) (*lambda.
 
 // ListFunctions indicates an expected call of ListFunctions
 func (mr *MockLambdaAPIMockRecorder) ListFunctions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctions", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctions), arg0)
 }
 
 // ListFunctionsPages mocks base method
 func (m *MockLambdaAPI) ListFunctionsPages(arg0 *lambda.ListFunctionsInput, arg1 func(*lambda.ListFunctionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFunctionsPages", arg0, arg1)
 	ret0, _ := ret[0].(error)
 	return ret0
@@ -878,11 +993,13 @@ func (m *MockLambdaAPI) ListFunctionsPages(arg0 *lambda.ListFunctionsInput, arg1
 
 // ListFunctionsPages indicates an expected call of ListFunctionsPages
 func (mr *MockLambdaAPIMockRecorder) ListFunctionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsPages", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsPages), arg0, arg1)
 }
 
 // ListFunctionsPagesWithContext mocks base method
 func (m *MockLambdaAPI) ListFunctionsPagesWithContext(arg0 aws.Context, arg1 *lambda.ListFunctionsInput, arg2 func(*lambda.ListFunctionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
 		varargs = append(varargs, a)
@@ -894,12 +1011,14 @@ func (m *MockLambdaAPI) ListFunctionsPagesWithContext(arg0 aws.Context, arg1 *la
 
 // ListFunctionsPagesWithContext indicates an expected call of ListFunctionsPagesWithContext
 func (mr *MockLambdaAPIMockRecorder) ListFunctionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsPagesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsPagesWithContext), varargs...)
 }
 
 // ListFunctionsRequest mocks base method
 func (m *MockLambdaAPI) ListFunctionsRequest(arg0 *lambda.ListFunctionsInput) (*request.Request, *lambda.ListFunctionsOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListFunctionsRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.ListFunctionsOutput)
@@ -908,11 +1027,13 @@ func (m *MockLambdaAPI) ListFunctionsRequest(arg0 *lambda.ListFunctionsInput) (*
 
 // ListFunctionsRequest indicates an expected call of ListFunctionsRequest
 func (mr *MockLambdaAPIMockRecorder) ListFunctionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsRequest), arg0)
 }
 
 // ListFunctionsWithContext mocks base method
 func (m *MockLambdaAPI) ListFunctionsWithContext(arg0 aws.Context, arg1 *lambda.ListFunctionsInput, arg2 ...request.Option) (*lambda.ListFunctionsOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -925,12 +1046,14 @@ func (m *MockLambdaAPI) ListFunctionsWithContext(arg0 aws.Context, arg1 *lambda.
 
 // ListFunctionsWithContext indicates an expected call of ListFunctionsWithContext
 func (mr *MockLambdaAPIMockRecorder) ListFunctionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsWithContext), varargs...)
 }
 
 // ListTags mocks base method
 func (m *MockLambdaAPI) ListTags(arg0 *lambda.ListTagsInput) (*lambda.ListTagsOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTags", arg0)
 	ret0, _ := ret[0].(*lambda.ListTagsOutput)
 	ret1, _ := ret[1].(error)
@@ -939,11 +1062,13 @@ func (m *MockLambdaAPI) ListTags(arg0 *lambda.ListTagsInput) (*lambda.ListTagsOu
 
 // ListTags indicates an expected call of ListTags
 func (mr *MockLambdaAPIMockRecorder) ListTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTags", reflect.TypeOf((*MockLambdaAPI)(nil).ListTags), arg0)
 }
 
 // ListTagsRequest mocks base method
 func (m *MockLambdaAPI) ListTagsRequest(arg0 *lambda.ListTagsInput) (*request.Request, *lambda.ListTagsOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListTagsRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.ListTagsOutput)
@@ -952,11 +1077,13 @@ func (m *MockLambdaAPI) ListTagsRequest(arg0 *lambda.ListTagsInput) (*request.Re
 
 // ListTagsRequest indicates an expected call of ListTagsRequest
 func (mr *MockLambdaAPIMockRecorder) ListTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListTagsRequest), arg0)
 }
 
 // ListTagsWithContext mocks base method
 func (m *MockLambdaAPI) ListTagsWithContext(arg0 aws.Context, arg1 *lambda.ListTagsInput, arg2 ...request.Option) (*lambda.ListTagsOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -969,12 +1096,14 @@ func (m *MockLambdaAPI) ListTagsWithContext(arg0 aws.Context, arg1 *lambda.ListT
 
 // ListTagsWithContext indicates an expected call of ListTagsWithContext
 func (mr *MockLambdaAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListTagsWithContext), varargs...)
 }
 
 // ListVersionsByFunction mocks base method
 func (m *MockLambdaAPI) ListVersionsByFunction(arg0 *lambda.ListVersionsByFunctionInput) (*lambda.ListVersionsByFunctionOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVersionsByFunction", arg0)
 	ret0, _ := ret[0].(*lambda.ListVersionsByFunctionOutput)
 	ret1, _ := ret[1].(error)
@@ -983,11 +1112,13 @@ func (m *MockLambdaAPI) ListVersionsByFunction(arg0 *lambda.ListVersionsByFuncti
 
 // ListVersionsByFunction indicates an expected call of ListVersionsByFunction
 func (mr *MockLambdaAPIMockRecorder) ListVersionsByFunction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsByFunction", reflect.TypeOf((*MockLambdaAPI)(nil).ListVersionsByFunction), arg0)
 }
 
 // ListVersionsByFunctionRequest mocks base method
 func (m *MockLambdaAPI) ListVersionsByFunctionRequest(arg0 *lambda.ListVersionsByFunctionInput) (*request.Request, *lambda.ListVersionsByFunctionOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "ListVersionsByFunctionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.ListVersionsByFunctionOutput)
@@ -996,11 +1127,13 @@ func (m *MockLambdaAPI) ListVersionsByFunctionRequest(arg0 *lambda.ListVersionsB
 
 // ListVersionsByFunctionRequest indicates an expected call of ListVersionsByFunctionRequest
 func (mr *MockLambdaAPIMockRecorder) ListVersionsByFunctionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsByFunctionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListVersionsByFunctionRequest), arg0)
 }
 
 // ListVersionsByFunctionWithContext mocks base method
 func (m *MockLambdaAPI) ListVersionsByFunctionWithContext(arg0 aws.Context, arg1 *lambda.ListVersionsByFunctionInput, arg2 ...request.Option) (*lambda.ListVersionsByFunctionOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1013,12 +1146,14 @@ func (m *MockLambdaAPI) ListVersionsByFunctionWithContext(arg0 aws.Context, arg1
 
 // ListVersionsByFunctionWithContext indicates an expected call of ListVersionsByFunctionWithContext
 func (mr *MockLambdaAPIMockRecorder) ListVersionsByFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsByFunctionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListVersionsByFunctionWithContext), varargs...)
 }
 
 // PublishVersion mocks base method
 func (m *MockLambdaAPI) PublishVersion(arg0 *lambda.PublishVersionInput) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PublishVersion", arg0)
 	ret0, _ := ret[0].(*lambda.FunctionConfiguration)
 	ret1, _ := ret[1].(error)
@@ -1027,11 +1162,13 @@ func (m *MockLambdaAPI) PublishVersion(arg0 *lambda.PublishVersionInput) (*lambd
 
 // PublishVersion indicates an expected call of PublishVersion
 func (mr *MockLambdaAPIMockRecorder) PublishVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishVersion", reflect.TypeOf((*MockLambdaAPI)(nil).PublishVersion), arg0)
 }
 
 // PublishVersionRequest mocks base method
 func (m *MockLambdaAPI) PublishVersionRequest(arg0 *lambda.PublishVersionInput) (*request.Request, *lambda.FunctionConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PublishVersionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.FunctionConfiguration)
@@ -1040,11 +1177,13 @@ func (m *MockLambdaAPI) PublishVersionRequest(arg0 *lambda.PublishVersionInput) 
 
 // PublishVersionRequest indicates an expected call of PublishVersionRequest
 func (mr *MockLambdaAPIMockRecorder) PublishVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishVersionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).PublishVersionRequest), arg0)
 }
 
 // PublishVersionWithContext mocks base method
 func (m *MockLambdaAPI) PublishVersionWithContext(arg0 aws.Context, arg1 *lambda.PublishVersionInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1057,12 +1196,14 @@ func (m *MockLambdaAPI) PublishVersionWithContext(arg0 aws.Context, arg1 *lambda
 
 // PublishVersionWithContext indicates an expected call of PublishVersionWithContext
 func (mr *MockLambdaAPIMockRecorder) PublishVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishVersionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PublishVersionWithContext), varargs...)
 }
 
 // PutFunctionConcurrency mocks base method
 func (m *MockLambdaAPI) PutFunctionConcurrency(arg0 *lambda.PutFunctionConcurrencyInput) (*lambda.PutFunctionConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutFunctionConcurrency", arg0)
 	ret0, _ := ret[0].(*lambda.PutFunctionConcurrencyOutput)
 	ret1, _ := ret[1].(error)
@@ -1071,11 +1212,13 @@ func (m *MockLambdaAPI) PutFunctionConcurrency(arg0 *lambda.PutFunctionConcurren
 
 // PutFunctionConcurrency indicates an expected call of PutFunctionConcurrency
 func (mr *MockLambdaAPIMockRecorder) PutFunctionConcurrency(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionConcurrency", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionConcurrency), arg0)
 }
 
 // PutFunctionConcurrencyRequest mocks base method
 func (m *MockLambdaAPI) PutFunctionConcurrencyRequest(arg0 *lambda.PutFunctionConcurrencyInput) (*request.Request, *lambda.PutFunctionConcurrencyOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "PutFunctionConcurrencyRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.PutFunctionConcurrencyOutput)
@@ -1084,11 +1227,13 @@ func (m *MockLambdaAPI) PutFunctionConcurrencyRequest(arg0 *lambda.PutFunctionCo
 
 // PutFunctionConcurrencyRequest indicates an expected call of PutFunctionConcurrencyRequest
 func (mr *MockLambdaAPIMockRecorder) PutFunctionConcurrencyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionConcurrencyRequest", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionConcurrencyRequest), arg0)
 }
 
 // PutFunctionConcurrencyWithContext mocks base method
 func (m *MockLambdaAPI) PutFunctionConcurrencyWithContext(arg0 aws.Context, arg1 *lambda.PutFunctionConcurrencyInput, arg2 ...request.Option) (*lambda.PutFunctionConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1101,12 +1246,14 @@ func (m *MockLambdaAPI) PutFunctionConcurrencyWithContext(arg0 aws.Context, arg1
 
 // PutFunctionConcurrencyWithContext indicates an expected call of PutFunctionConcurrencyWithContext
 func (mr *MockLambdaAPIMockRecorder) PutFunctionConcurrencyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionConcurrencyWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionConcurrencyWithContext), varargs...)
 }
 
 // RemovePermission mocks base method
 func (m *MockLambdaAPI) RemovePermission(arg0 *lambda.RemovePermissionInput) (*lambda.RemovePermissionOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemovePermission", arg0)
 	ret0, _ := ret[0].(*lambda.RemovePermissionOutput)
 	ret1, _ := ret[1].(error)
@@ -1115,11 +1262,13 @@ func (m *MockLambdaAPI) RemovePermission(arg0 *lambda.RemovePermissionInput) (*l
 
 // RemovePermission indicates an expected call of RemovePermission
 func (mr *MockLambdaAPIMockRecorder) RemovePermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemovePermission", reflect.TypeOf((*MockLambdaAPI)(nil).RemovePermission), arg0)
 }
 
 // RemovePermissionRequest mocks base method
 func (m *MockLambdaAPI) RemovePermissionRequest(arg0 *lambda.RemovePermissionInput) (*request.Request, *lambda.RemovePermissionOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RemovePermissionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.RemovePermissionOutput)
@@ -1128,11 +1277,13 @@ func (m *MockLambdaAPI) RemovePermissionRequest(arg0 *lambda.RemovePermissionInp
 
 // RemovePermissionRequest indicates an expected call of RemovePermissionRequest
 func (mr *MockLambdaAPIMockRecorder) RemovePermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemovePermissionRequest", reflect.TypeOf((*MockLambdaAPI)(nil).RemovePermissionRequest), arg0)
 }
 
 // RemovePermissionWithContext mocks base method
 func (m *MockLambdaAPI) RemovePermissionWithContext(arg0 aws.Context, arg1 *lambda.RemovePermissionInput, arg2 ...request.Option) (*lambda.RemovePermissionOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1145,12 +1296,14 @@ func (m *MockLambdaAPI) RemovePermissionWithContext(arg0 aws.Context, arg1 *lamb
 
 // RemovePermissionWithContext indicates an expected call of RemovePermissionWithContext
 func (mr *MockLambdaAPIMockRecorder) RemovePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemovePermissionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).RemovePermissionWithContext), varargs...)
 }
 
 // TagResource mocks base method
 func (m *MockLambdaAPI) TagResource(arg0 *lambda.TagResourceInput) (*lambda.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResource", arg0)
 	ret0, _ := ret[0].(*lambda.TagResourceOutput)
 	ret1, _ := ret[1].(error)
@@ -1159,11 +1312,13 @@ func (m *MockLambdaAPI) TagResource(arg0 *lambda.TagResourceInput) (*lambda.TagR
 
 // TagResource indicates an expected call of TagResource
 func (mr *MockLambdaAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockLambdaAPI)(nil).TagResource), arg0)
 }
 
 // TagResourceRequest mocks base method
 func (m *MockLambdaAPI) TagResourceRequest(arg0 *lambda.TagResourceInput) (*request.Request, *lambda.TagResourceOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.TagResourceOutput)
@@ -1172,11 +1327,13 @@ func (m *MockLambdaAPI) TagResourceRequest(arg0 *lambda.TagResourceInput) (*requ
 
 // TagResourceRequest indicates an expected call of TagResourceRequest
 func (mr *MockLambdaAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockLambdaAPI)(nil).TagResourceRequest), arg0)
 }
 
 // TagResourceWithContext mocks base method
 func (m *MockLambdaAPI) TagResourceWithContext(arg0 aws.Context, arg1 *lambda.TagResourceInput, arg2 ...request.Option) (*lambda.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1189,12 +1346,14 @@ func (m *MockLambdaAPI) TagResourceWithContext(arg0 aws.Context, arg1 *lambda.Ta
 
 // TagResourceWithContext indicates an expected call of TagResourceWithContext
 func (mr *MockLambdaAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).TagResourceWithContext), varargs...)
 }
 
 // UntagResource mocks base method
 func (m *MockLambdaAPI) UntagResource(arg0 *lambda.UntagResourceInput) (*lambda.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResource", arg0)
 	ret0, _ := ret[0].(*lambda.UntagResourceOutput)
 	ret1, _ := ret[1].(error)
@@ -1203,11 +1362,13 @@ func (m *MockLambdaAPI) UntagResource(arg0 *lambda.UntagResourceInput) (*lambda.
 
 // UntagResource indicates an expected call of UntagResource
 func (mr *MockLambdaAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockLambdaAPI)(nil).UntagResource), arg0)
 }
 
 // UntagResourceRequest mocks base method
 func (m *MockLambdaAPI) UntagResourceRequest(arg0 *lambda.UntagResourceInput) (*request.Request, *lambda.UntagResourceOutput) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.UntagResourceOutput)
@@ -1216,11 +1377,13 @@ func (m *MockLambdaAPI) UntagResourceRequest(arg0 *lambda.UntagResourceInput) (*
 
 // UntagResourceRequest indicates an expected call of UntagResourceRequest
 func (mr *MockLambdaAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UntagResourceRequest), arg0)
 }
 
 // UntagResourceWithContext mocks base method
 func (m *MockLambdaAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *lambda.UntagResourceInput, arg2 ...request.Option) (*lambda.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1233,12 +1396,14 @@ func (m *MockLambdaAPI) UntagResourceWithContext(arg0 aws.Context, arg1 *lambda.
 
 // UntagResourceWithContext indicates an expected call of UntagResourceWithContext
 func (mr *MockLambdaAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateAlias mocks base method
 func (m *MockLambdaAPI) UpdateAlias(arg0 *lambda.UpdateAliasInput) (*lambda.AliasConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAlias", arg0)
 	ret0, _ := ret[0].(*lambda.AliasConfiguration)
 	ret1, _ := ret[1].(error)
@@ -1247,11 +1412,13 @@ func (m *MockLambdaAPI) UpdateAlias(arg0 *lambda.UpdateAliasInput) (*lambda.Alia
 
 // UpdateAlias indicates an expected call of UpdateAlias
 func (mr *MockLambdaAPIMockRecorder) UpdateAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAlias", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateAlias), arg0)
 }
 
 // UpdateAliasRequest mocks base method
 func (m *MockLambdaAPI) UpdateAliasRequest(arg0 *lambda.UpdateAliasInput) (*request.Request, *lambda.AliasConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateAliasRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.AliasConfiguration)
@@ -1260,11 +1427,13 @@ func (m *MockLambdaAPI) UpdateAliasRequest(arg0 *lambda.UpdateAliasInput) (*requ
 
 // UpdateAliasRequest indicates an expected call of UpdateAliasRequest
 func (mr *MockLambdaAPIMockRecorder) UpdateAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAliasRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateAliasRequest), arg0)
 }
 
 // UpdateAliasWithContext mocks base method
 func (m *MockLambdaAPI) UpdateAliasWithContext(arg0 aws.Context, arg1 *lambda.UpdateAliasInput, arg2 ...request.Option) (*lambda.AliasConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1277,12 +1446,14 @@ func (m *MockLambdaAPI) UpdateAliasWithContext(arg0 aws.Context, arg1 *lambda.Up
 
 // UpdateAliasWithContext indicates an expected call of UpdateAliasWithContext
 func (mr *MockLambdaAPIMockRecorder) UpdateAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateAliasWithContext), varargs...)
 }
 
 // UpdateEventSourceMapping mocks base method
 func (m *MockLambdaAPI) UpdateEventSourceMapping(arg0 *lambda.UpdateEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEventSourceMapping", arg0)
 	ret0, _ := ret[0].(*lambda.EventSourceMappingConfiguration)
 	ret1, _ := ret[1].(error)
@@ -1291,11 +1462,13 @@ func (m *MockLambdaAPI) UpdateEventSourceMapping(arg0 *lambda.UpdateEventSourceM
 
 // UpdateEventSourceMapping indicates an expected call of UpdateEventSourceMapping
 func (mr *MockLambdaAPIMockRecorder) UpdateEventSourceMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventSourceMapping", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateEventSourceMapping), arg0)
 }
 
 // UpdateEventSourceMappingRequest mocks base method
 func (m *MockLambdaAPI) UpdateEventSourceMappingRequest(arg0 *lambda.UpdateEventSourceMappingInput) (*request.Request, *lambda.EventSourceMappingConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateEventSourceMappingRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.EventSourceMappingConfiguration)
@@ -1304,11 +1477,13 @@ func (m *MockLambdaAPI) UpdateEventSourceMappingRequest(arg0 *lambda.UpdateEvent
 
 // UpdateEventSourceMappingRequest indicates an expected call of UpdateEventSourceMappingRequest
 func (mr *MockLambdaAPIMockRecorder) UpdateEventSourceMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventSourceMappingRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateEventSourceMappingRequest), arg0)
 }
 
 // UpdateEventSourceMappingWithContext mocks base method
 func (m *MockLambdaAPI) UpdateEventSourceMappingWithContext(arg0 aws.Context, arg1 *lambda.UpdateEventSourceMappingInput, arg2 ...request.Option) (*lambda.EventSourceMappingConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1321,12 +1496,14 @@ func (m *MockLambdaAPI) UpdateEventSourceMappingWithContext(arg0 aws.Context, ar
 
 // UpdateEventSourceMappingWithContext indicates an expected call of UpdateEventSourceMappingWithContext
 func (mr *MockLambdaAPIMockRecorder) UpdateEventSourceMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventSourceMappingWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateEventSourceMappingWithContext), varargs...)
 }
 
 // UpdateFunctionCode mocks base method
 func (m *MockLambdaAPI) UpdateFunctionCode(arg0 *lambda.UpdateFunctionCodeInput) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFunctionCode", arg0)
 	ret0, _ := ret[0].(*lambda.FunctionConfiguration)
 	ret1, _ := ret[1].(error)
@@ -1335,11 +1512,13 @@ func (m *MockLambdaAPI) UpdateFunctionCode(arg0 *lambda.UpdateFunctionCodeInput)
 
 // UpdateFunctionCode indicates an expected call of UpdateFunctionCode
 func (mr *MockLambdaAPIMockRecorder) UpdateFunctionCode(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionCode", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionCode), arg0)
 }
 
 // UpdateFunctionCodeRequest mocks base method
 func (m *MockLambdaAPI) UpdateFunctionCodeRequest(arg0 *lambda.UpdateFunctionCodeInput) (*request.Request, *lambda.FunctionConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFunctionCodeRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.FunctionConfiguration)
@@ -1348,11 +1527,13 @@ func (m *MockLambdaAPI) UpdateFunctionCodeRequest(arg0 *lambda.UpdateFunctionCod
 
 // UpdateFunctionCodeRequest indicates an expected call of UpdateFunctionCodeRequest
 func (mr *MockLambdaAPIMockRecorder) UpdateFunctionCodeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionCodeRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionCodeRequest), arg0)
 }
 
 // UpdateFunctionCodeWithContext mocks base method
 func (m *MockLambdaAPI) UpdateFunctionCodeWithContext(arg0 aws.Context, arg1 *lambda.UpdateFunctionCodeInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1365,12 +1546,14 @@ func (m *MockLambdaAPI) UpdateFunctionCodeWithContext(arg0 aws.Context, arg1 *la
 
 // UpdateFunctionCodeWithContext indicates an expected call of UpdateFunctionCodeWithContext
 func (mr *MockLambdaAPIMockRecorder) UpdateFunctionCodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionCodeWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionCodeWithContext), varargs...)
 }
 
 // UpdateFunctionConfiguration mocks base method
 func (m *MockLambdaAPI) UpdateFunctionConfiguration(arg0 *lambda.UpdateFunctionConfigurationInput) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFunctionConfiguration", arg0)
 	ret0, _ := ret[0].(*lambda.FunctionConfiguration)
 	ret1, _ := ret[1].(error)
@@ -1379,11 +1562,13 @@ func (m *MockLambdaAPI) UpdateFunctionConfiguration(arg0 *lambda.UpdateFunctionC
 
 // UpdateFunctionConfiguration indicates an expected call of UpdateFunctionConfiguration
 func (mr *MockLambdaAPIMockRecorder) UpdateFunctionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionConfiguration", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionConfiguration), arg0)
 }
 
 // UpdateFunctionConfigurationRequest mocks base method
 func (m *MockLambdaAPI) UpdateFunctionConfigurationRequest(arg0 *lambda.UpdateFunctionConfigurationInput) (*request.Request, *lambda.FunctionConfiguration) {
+	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "UpdateFunctionConfigurationRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
 	ret1, _ := ret[1].(*lambda.FunctionConfiguration)
@@ -1392,11 +1577,13 @@ func (m *MockLambdaAPI) UpdateFunctionConfigurationRequest(arg0 *lambda.UpdateFu
 
 // UpdateFunctionConfigurationRequest indicates an expected call of UpdateFunctionConfigurationRequest
 func (mr *MockLambdaAPIMockRecorder) UpdateFunctionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionConfigurationRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionConfigurationRequest), arg0)
 }
 
 // UpdateFunctionConfigurationWithContext mocks base method
 func (m *MockLambdaAPI) UpdateFunctionConfigurationWithContext(arg0 aws.Context, arg1 *lambda.UpdateFunctionConfigurationInput, arg2 ...request.Option) (*lambda.FunctionConfiguration, error) {
+	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
@@ -1409,6 +1596,7 @@ func (m *MockLambdaAPI) UpdateFunctionConfigurationWithContext(arg0 aws.Context,
 
 // UpdateFunctionConfigurationWithContext indicates an expected call of UpdateFunctionConfigurationWithContext
 func (mr *MockLambdaAPIMockRecorder) UpdateFunctionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFunctionConfigurationWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateFunctionConfigurationWithContext), varargs...)
 }

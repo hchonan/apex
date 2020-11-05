@@ -1,7 +1,38 @@
 
 # No longer maintained
 
-This software is no longer being maintainted and should not be chosen for new projects. See this [issue](https://github.com/apex/apex/issues/932) for more information
+This software is no longer being maintained and should not be chosen for new projects. The original repository is [apex/apex](https://github.com/apex/apex).
+
+Purpose of this repository is to providing last binary package for existing apex user convenience with minimal changes (such as GitHub path changing). 
+I'm not going to maintain this software actively. Note that not be chosen this software for new project, just use for maintain existing(maybe old) project only.
+
+## Installation ( for existing, old project )
+
+On macOS, Linux, or OpenBSD run the following:
+
+```
+curl https://raw.githubusercontent.com/hchonan/apex/master/install.sh | sh
+```
+
+Note that you may need to run the `sudo` version below, or chown `/usr/local`:
+```
+curl https://raw.githubusercontent.com/hchonan/apex/master/install.sh | sudo sh
+```
+
+On Windows download [binary](https://github.com/hchonan/apex/releases).
+
+After downloading, rename the binary file 'apex.exe', then add to PATH.
+
+If already installed, upgrade with:
+
+```
+apex upgrade
+```
+
+
+---
+
+## Original Readme.md
 
 ![Apex Serverless Architecture](assets/title.png)
 

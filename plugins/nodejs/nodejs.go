@@ -4,7 +4,7 @@ package nodejs
 import (
 	"strings"
 
-	"github.com/apex/apex/function"
+	"github.com/hchonan/apex/function"
 )
 
 const (

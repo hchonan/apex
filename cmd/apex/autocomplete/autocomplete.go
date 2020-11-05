@@ -8,8 +8,8 @@ import (
 	"github.com/tj/cobra"
 	flag "github.com/tj/pflag"
 
-	"github.com/apex/apex/cmd/apex/root"
-	"github.com/apex/apex/utils"
+	"github.com/hchonan/apex/cmd/apex/root"
+	"github.com/hchonan/apex/utils"
 )
 
 // funcCommands is a list of commands which
